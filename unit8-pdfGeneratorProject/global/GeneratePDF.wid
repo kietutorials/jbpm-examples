@@ -1,0 +1,27 @@
+[
+        [
+            "name" : "GeneratePDF",
+            "displayName" : "GeneratePDF",
+            "category" : "pdf-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.pdf.GeneratePDFWorkitemHandler()",
+            "documentation" : "pdf-workitem/index.html",
+
+            "parameters" : [
+                                "TemplateXHTML" : new StringDataType()
+                ,"PDFName" : new StringDataType()
+
+            ],
+            "results" : [
+                                "PDFDocument" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:pdf-workitem:7.42.0.Final"
+
+            ],
+            "icon" : "GeneratePDF.png"
+
+        ]
+
+]
