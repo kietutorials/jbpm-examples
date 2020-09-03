@@ -1,0 +1,28 @@
+[
+        [
+            "name" : "ExecuteSQL",
+            "displayName" : "ExecuteSQL",
+            "category" : "execute-sql-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.executesql.ExecuteSqlWorkItemHandler(\"dataSourceName\")",
+            "documentation" : "execute-sql-workitem/index.html",
+
+            "parameters" : [
+                                "MaxResults" : new StringDataType()
+                ,"ColumnSeparator" : new StringDataType()
+                ,"SQLStatement" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Result" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:execute-sql-workitem:7.42.0.Final"
+
+            ],
+            "icon" : "ExecuteSQL.png"
+
+        ]
+
+]
